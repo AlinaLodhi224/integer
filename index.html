@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        function checkCharacterType(inputChar) {
+    // Using ASCII values to check character type
+    let charCode = inputChar.charCodeAt(0);
+
+    if (charCode >= 48 && charCode <= 57) {
+        document.write(inputChar + " is a number.");
+    } else if (charCode >= 65 && charCode <= 90) {
+        document.write(inputChar + " is an uppercase letter.");
+    } else if (charCode >= 97 && charCode <= 122) {
+        document.write(inputChar + " is a lowercase letter.");
+    } else {
+        document.write(inputChar + " is not a number or a letter.");
+    }
+}
+
+// Example usage:
+let input = prompt("Enter a character (number or letter):");
+checkCharacterType(input);
+
+
+    </script>
+</body>
+</html>
